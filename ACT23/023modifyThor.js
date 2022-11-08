@@ -20,7 +20,17 @@ alert('El carácter que ocupa la posición 1 es: ' + thor.at(1));
 
 // Trocea la cadena usando los espacios en blanco
 
+let separado = thor.split(" ");
+let thor_new = '';
 
+for (let i = 0; i < separado.length; i++) {
+    if (i < 1) {
+        thor_new = separado[i];
+    } else {
+        thor_new = thor_new + '-' + separado[i];
+    }
+}
+alert(thor_new);
 
 // Reemplaza Thor por Loki
 
