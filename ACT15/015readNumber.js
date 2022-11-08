@@ -2,25 +2,19 @@
 
 function readNumber() {
     
-    let comprobar = true;
-    while(comprobar == true) {
-
-        let number = prompt('Ingrese un valor numérico:');
-
-        if (number == "" || number == null) {
-            break;
-        }
-
-        let newNumber = parseInt(number);
-
-        if(isNaN(newNumber)) {
-            newNumber = parseInt(prompt('ERROR. Ingrese un valor numérico:'));
-        } else {
-            comprobar = false;
-        }
+    let number = prompt('Ingrese un valor numérico:');
+    
+    while(isNaN(number)) { // Comprobamos que el valor sea number, si no lo es pediremos de nuevo que ingrese el valor.
+        number = prompt('ERROR. Ingrese un valor numérico:'); 
     }
 
-    alert(number);
+    if (number == "" || number == null) { // Si envía una línea vacía o cancela la ejecución mostrará null.
+        return null;
+    }
+
+    return 'El número introducido es: ' + number;
 }
 
-readNumber();
+alert(readNumber()); 
+/* Si introducimos 4, mostrará 'El número introducido es: 4'. 
+Si introducimos 'usb', mostrará null. */

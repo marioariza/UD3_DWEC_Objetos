@@ -1,11 +1,11 @@
 "use strict";
 
-let i = 0;
+// let i = 0;
 
-while (i != 10) {
-    i += 0.2;
-    alert(i);
-}
+// while (i != 10) {
+//     i += 0.2;
+//     alert(i);
+// }
 
 /* El bucle nunca termina debido a que se almacena en la memoria en su forma binaria y se realiza un cálculo impreciso.
 Nunca se llegará a 10 de forma redondeada ya que se van sumando decimales entonces el bucle no terminará */
