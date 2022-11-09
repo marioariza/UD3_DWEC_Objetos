@@ -8,7 +8,9 @@ alert('El largo de la cadena es: ' + thor.length);
 
 // Encontrar la letra o
 
+let where = thor.indexOf('o');
 
+alert('La letra o esta en la posición: ' + where);
 
 // Encontrar el carácter que ocupa la posición 3
 
@@ -34,7 +36,7 @@ alert(thor_new);
 
 // Reemplaza Thor por Loki
 
-
+alert(thor.replace('Thor', 'Loki'));
 
 // Recorta la cadena para que devuelva la palabra Odín
 
