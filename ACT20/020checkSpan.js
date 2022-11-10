@@ -1,9 +1,9 @@
 "use strict";
 
 function checkSpam(str) {
-    if (str.includes('viagra')) {
+    if (str.toLowerCase().includes('viagra')) {
         return true;
-    } else if (str.includes('xxx')) {
+    } else if (str.toUpperCase().includes('XXX')) {
         return true;
     } else {
         return false;
