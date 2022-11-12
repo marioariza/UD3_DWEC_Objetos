@@ -1,5 +1,1 @@
 "use strict";
-
-let date = {
-    
-}

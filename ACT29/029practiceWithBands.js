@@ -10,6 +10,7 @@ let grupos = [
 // Filtra los grupos por género obtenido aquellos que son de Heavy Metal.
 
 
+
 // Busca en los grupos usando “find” el grupo con Nombre “Cold Play”.
 
 
