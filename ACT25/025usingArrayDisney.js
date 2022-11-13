@@ -10,7 +10,7 @@ let disney = [
 
 //Meter a Peter Pan al final del array disney.
 
-disney.push({nombre:'Peter Pan', pelicula: 'Peter Pan'}); // Metemos a Peter Pan al final del array.
+disney.push({nombre:'Peter Pan', pelicula: 'Peter Pan'}); // Con push metemos a Peter Pan al final del array.
 
 //Pintar el array.
 
@@ -20,7 +20,7 @@ for (let value of disney) { // Pintamos el array y mostramos sus valores.
 
 //Meter a El capitán Garfio al principio del array, no olvides la película.
 
-disney.unshift({nombre:'El capitán Garfio', pelicula: 'Peter Pan'});
+disney.unshift({nombre:'El capitán Garfio', pelicula: 'Peter Pan'}); // Con unshift metemos el valor al principio del array.
 
 for (let value of disney) { // Pintamos el array y mostramos sus valores.
     alert('Tras meter El capitán Garfio = Nombre: ' + value.nombre + ' - Pelicula: ' + value.pelicula);
@@ -57,7 +57,7 @@ alert('El índice del Cocodrilo Tic Tac es : ' + disney.findIndex(disney => disn
 //Escribe la función shuffle(array) que baraje (reordene de forma aleatoria) los elementos del array.
 
 function shuffle(array) {
-    array.sort();
+    array.sort(() => Math.random() - 0.5);
 }
 
 alert(shuffle(disney));
