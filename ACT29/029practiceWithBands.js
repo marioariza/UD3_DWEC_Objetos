@@ -13,6 +13,8 @@ let grupos = [
 
 // Busca en los grupos usando “find” el grupo con Nombre “Cold Play”.
 
-
+console.log(grupos.find(name => name.nombre == "Cold Play"));
 
 // ¿En qué posición del array se encuenta “Cold Play”?
+
+alert('La posición que ocupa Cold Play es : ' + grupos.findIndex(grupos => grupos.nombre == 'Cold Play'));
