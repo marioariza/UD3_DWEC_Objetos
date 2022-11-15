@@ -56,8 +56,11 @@ alert('El índice del Cocodrilo Tic Tac es : ' + disney.findIndex(disney => disn
 
 //Escribe la función shuffle(array) que baraje (reordene de forma aleatoria) los elementos del array.
 
+let newArray = [];
+shuffle(disney);
+
 function shuffle(array) {
-    array.sort(() => Math.random() - 0.5);
+    newArray = array.sort(() => Math.random() - 0.5);
 }
 
-alert(shuffle(disney));
+alert(newArray);
