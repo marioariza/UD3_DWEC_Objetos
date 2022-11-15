@@ -21,4 +21,4 @@ alert('Nombre: ' + coldplay.nombre + ' - Género: ' + coldplay.genero); // Mostr
 
 // ¿En qué posición del array se encuenta “Cold Play”?
 
-alert('La posición que ocupa Cold Play es : ' + grupos.findIndex(grupos => grupos.nombre == 'Cold Play'));
+alert('La posición que ocupa Cold Play es : ' + grupos.findIndex(grupos => grupos.nombre == 'Cold Play')); // Índice = 1
